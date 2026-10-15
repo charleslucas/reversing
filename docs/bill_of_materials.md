@@ -61,6 +61,23 @@ Loose 20 cm jumpers are fine for static poking and stimulus up to a few MHz. Fas
 
 An 8-bit part such as the SN74LVC8T245 needs fewer chips but shares one direction pin across all 8 bits, so it only suits pins whose direction you already know in groups.
 
+## Am5x86 carrier
+
+See [am5x86_flow.md](am5x86_flow.md). Prices not yet looked up.
+
+| Item                                                     | Qty     | Notes                                        |
+| -------------------------------------------------------- | ------- | -------------------------------------------- |
+| 168-pin PGA socket, or Socket 3 ZIF socket               | 1       | Socket 3 accepts 168-pin 486 parts.          |
+| Carrier PCB, two-layer                                   | 1 batch | Cheap PCB fab. Usually sold in batches of 5. |
+| Resistors, 33 to 100 Ω, 0603 or resistor arrays          | 80      | Series resistors on FPGA-connected signals.  |
+| Resistors, 10 kΩ                                         | 20      | Tie-offs.                                    |
+| Capacitors, 100 nF and 10 µF                             | 30      | Decoupling at the VCC pins.                  |
+| 2x10 0.1" box header                                     | 1       | ARM JTAG header for the Olimex adapter.      |
+| Stacking headers to fit the Arty shield and Pmod headers | 1 set   | Carrier plugs straight onto the Arty.        |
+| Small heatsink for a 486                                 | 1       | Only needed near full clock speed.           |
+
+The 3.45 V supply uses the current-limited bench supply from Phase 1.
+
 ## Package adapters (buy as needed)
 
 | Item                                            | Qty       | Notes           |

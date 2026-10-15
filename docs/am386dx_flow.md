@@ -2,6 +2,8 @@
 
 Plan for behavioural reverse engineering of an AMD Am386DX-40: the Arty A7-35T acts as the whole motherboard (clock, reset, memory) and records every bus cycle. Silicon-level work is covered briefly at the end.
 
+**Parked.** No 386 is owned. The Am5x86 was chosen as the first target instead, see [am5x86_flow.md](am5x86_flow.md).
+
 Pin and voltage details are from memory. Check them against the AMD Am386DX/DXL datasheet before building.
 
 ## Open question

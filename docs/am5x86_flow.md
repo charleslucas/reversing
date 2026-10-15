@@ -1,6 +1,6 @@
 # Am5x86 Flow
 
-Plan for behavioural reverse engineering of the AMD Am5x86-P75 (Am486DX5-133 V16BCG). The Arty A7-35T acts as the whole motherboard: it supplies clock and reset, serves memory, and records every bus cycle. The Olimex ARM-USB-TINY-H handles JTAG bring-up.
+Plan for behavioural reverse engineering of the AMD Am5x86-P75 (Am486DX5-133V16BGC). The Arty A7-35T acts as the whole motherboard: it supplies clock and reset, serves memory, and records every bus cycle. The Olimex ARM-USB-TINY-H handles JTAG bring-up.
 
 Facts marked as confirmed come from AMD's Enhanced Am486DX Microprocessor Family datasheet (publication 20736, preliminary), which covers the Am486DX5-133: <https://www.amd.com/content/dam/amd/en/documents/archived-tech-docs/datasheets/20736.pdf>. The Am5x86 has its own datasheet (publication 19751) and is described there as functionally identical apart from the CLKMUL pin. Pin numbers still need to be taken from the pinout before the carrier board is designed.
 

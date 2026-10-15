@@ -12,13 +12,13 @@ Equipment already on hand. Parts still to buy are in [bill_of_materials.md](bill
 
 ## Chips to reverse engineer
 
-| Item                                 | Qty | Key specs                                                                                                   | Notes                                                                                   |
-| ------------------------------------ | --- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| AMD Am5x86-P75 (Am486DX5-133 V16BCG) | 1   | 168-pin PGA, 3.3 V (3.15 to 3.6 V), 8 to 33 MHz bus with 4x internal clock, 16 KB cache, JTAG boundary scan | First target. I/O levels work with the Arty without translators.                        |
-| Motorola MC68030RC40C                | 1   | 128-pin ceramic PGA, 5 V, 40 MHz, asynchronous bus                                                          | Second target. Needs 5 V level shifting.                                                |
-| Motorola MC68EN360RC25C (QUICC)      | 1   | 241-pin PGA, CPU32+ core with Ethernet and comms processor, 25 MHz, background debug mode                   | Later target. Controllable over the few-wire debug port rather than a full pin harness. |
-| AMD Duron                            | 1   | Socket A, EV6 bus                                                                                           | Bus too fast and complex for the Arty. Software-level work on a motherboard only.       |
-| AMD Athlon                           | 1   | Socket A or Slot A, EV6 bus                                                                                 | As for the Duron.                                                                       |
+| Item                                | Qty | Key specs                                                                                                   | Notes                                                                                                                                         |
+| ----------------------------------- | --- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| AMD Am5x86-P75 (Am486DX5-133V16BGC) | 1   | 168-pin PGA, 3.3 V (3.15 to 3.6 V), 8 to 33 MHz bus with 4x internal clock, 16 KB cache, JTAG boundary scan | First target. I/O levels work with the Arty without translators. Markings: 9825DPB, made in Malaysia (date code 9825 suggests 1998, week 25). |
+| Motorola MC68030RC40C               | 1   | 128-pin ceramic PGA, 5 V, 40 MHz, asynchronous bus                                                          | Second target. Needs 5 V level shifting.                                                                                                      |
+| Motorola MC68EN360RC25C (QUICC)     | 1   | 241-pin PGA, CPU32+ core with Ethernet and comms processor, 25 MHz, background debug mode                   | Later target. Controllable over the few-wire debug port rather than a full pin harness.                                                       |
+| AMD Duron                           | 1   | Socket A, EV6 bus                                                                                           | Bus too fast and complex for the Arty. Software-level work on a motherboard only.                                                             |
+| AMD Athlon                          | 1   | Socket A or Slot A, EV6 bus                                                                                 | As for the Duron.                                                                                                                             |
 
 ## Test and measurement
 

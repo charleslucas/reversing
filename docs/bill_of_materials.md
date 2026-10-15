@@ -6,15 +6,15 @@ Part numbers are examples of the class of part, not verified orders. Check packa
 
 ## Phase 1: first build (3.3 V DIP parts, 16 pins)
 
-| Item                                                               | Qty   | Status | Notes                                                                                                       |
-| ------------------------------------------------------------------ | ----- | ------ | ----------------------------------------------------------------------------------------------------------- |
-| Digilent Arty A7-35T                                               | 1     | Owned  | Controller. See [arty_a7_35t_flow.md](arty_a7_35t_flow.md).                                                 |
-| Micro-USB cable                                                    | 1     |        | Power, JTAG programming and USB-UART to the PC.                                                             |
-| DIP ZIF socket, 48-pin, universal slot (takes 0.3" and 0.6" parts) | 1     |        | The single universal interface to the chip under test.                                                      |
-| Pmod cable or 2x6 pin header breakout                              | 2     |        | Brings Pmods JA and JD (16 I/O, 200 Ω series already fitted) out to the ZIF.                                |
-| Solderless breadboard, half-size                                   | 0     | Owned  | Two on hand, see [inventory.md](inventory.md). For side circuits; the ZIF socket goes on perfboard (below). |
-| Jumper wires, 0.1" male-male and male-female                       | 1 set |        | Signal wiring and manual VCC/GND routing.                                                                   |
-| Current-limited bench supply                                       | 1     |        | Powers the chip under test. Set the limit low before first power-up.                                        |
+| Item                                                               | Qty | Status | Notes                                                                                                       |
+| ------------------------------------------------------------------ | --- | ------ | ----------------------------------------------------------------------------------------------------------- |
+| Digilent Arty A7-35T                                               | 1   | Owned  | Controller. See [arty_a7_35t_flow.md](arty_a7_35t_flow.md).                                                 |
+| Micro-USB cable                                                    | 1   |        | Power, JTAG programming and USB-UART to the PC.                                                             |
+| DIP ZIF socket, 48-pin, universal slot (takes 0.3" and 0.6" parts) | 1   |        | The single universal interface to the chip under test.                                                      |
+| Pmod cable or 2x6 pin header breakout                              | 2   |        | Brings Pmods JA and JD (16 I/O, 200 Ω series already fitted) out to the ZIF.                                |
+| Solderless breadboard, half-size                                   | 0   | Owned  | Two half-size plus an Archer Experimenter 300, see [inventory.md](inventory.md). The ZIF goes on perfboard. |
+| Jumper wires, 0.1" male-male and male-female                       | 0   | Owned  | Assorted lot on hand, see [inventory.md](inventory.md). Signal wiring and manual VCC/GND routing.           |
+| Current-limited bench supply                                       | 0   | Owned  | TekPower HY1803D, see [inventory.md](inventory.md). Set the limit low before first power-up.                |
 
 ### ZIF socket and connection: spec and pricing
 

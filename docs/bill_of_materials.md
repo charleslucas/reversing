@@ -76,7 +76,7 @@ See [am5x86_flow.md](am5x86_flow.md). Prices not yet looked up.
 | Stacking headers to fit the Arty shield and Pmod headers | 1 set   | Carrier plugs straight onto the Arty.        |
 | Small heatsink for a 486                                 | 1       | Only needed near full clock speed.           |
 
-The 3.45 V supply uses the current-limited bench supply from Phase 1.
+The 3.3 V supply uses the current-limited bench supply from Phase 1.
 
 ## Package adapters (buy as needed)
 

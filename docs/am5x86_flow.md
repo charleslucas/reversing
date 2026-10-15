@@ -108,3 +108,8 @@ Plugging straight onto the Arty, rather than using jumper wires, matters because
 - Opcode sweeps compared against an emulator (Bochs or 86Box), looking for undocumented behaviour.
 - Bus timing and cycle ordering compared with Intel 486 documentation.
 - Write-back cache protocol (WB/WT# tied to write-back, HITM#, INV), once write-through works.
+
+## Related projects
+
+- **Universal Chip Analyzer (x86.fr):** an FPGA tester with per-CPU adapter boards. Its 486 adapter supports the Am5x86. Version 3 uses the same FPGA as the Arty (Artix-7 XC7A35T), and the author has said all the code will be released as open source. As of the January 2024 post it was in final beta, with no price or shop yet; the project page still showed the 486 adapter as "coming soon" in 2025. <https://x86.fr/final-universal-chip-analyzer-disclosed/>
+- **M8SBC-486:** an open-source homebrew 486 motherboard with an FPGA chipset and KiCad files. Designed for 5 V 486s. A reference for the 168-pin socket footprint and pinout; check its licence before reusing files. <https://github.com/maniekx86/M8SBC-486>

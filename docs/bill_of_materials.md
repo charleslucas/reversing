@@ -63,20 +63,35 @@ An 8-bit part such as the SN74LVC8T245 needs fewer chips but shares one directio
 
 ## Am5x86 carrier
 
-See [am5x86_flow.md](am5x86_flow.md). Prices not yet looked up.
+See [am5x86_flow.md](am5x86_flow.md). Prices looked up on 2026-10-14 from search listings; confirm before ordering.
 
-| Item                                                     | Qty     | Notes                                        |
-| -------------------------------------------------------- | ------- | -------------------------------------------- |
-| 168-pin PGA socket, or Socket 3 ZIF socket               | 1       | Socket 3 accepts 168-pin 486 parts.          |
-| Carrier PCB, two-layer                                   | 1 batch | Cheap PCB fab. Usually sold in batches of 5. |
-| Resistors, 33 to 100 Ω, 0603 or resistor arrays          | 80      | Series resistors on FPGA-connected signals.  |
-| Resistors, 10 kΩ                                         | 20      | Tie-offs.                                    |
-| Capacitors, 100 nF and 10 µF                             | 30      | Decoupling at the VCC pins.                  |
-| 2x10 0.1" box header                                     | 1       | ARM JTAG header for the Olimex adapter.      |
-| Stacking headers to fit the Arty shield and Pmod headers | 1 set   | Carrier plugs straight onto the Arty.        |
-| Small heatsink for a 486                                 | 1       | Only needed near full clock speed.           |
+### Order now
 
-The 3.3 V supply uses the current-limited bench supply from Phase 1.
+| Item | Qty | Price (qty 1) | Notes |
+|---|---|---|---|
+| PGA-168 machined-pin socket, 17x17 grid (Mill-Max 510-93-168-17-101002) | 1 | about $63 at Mouser | Recommended. Exact footprint for the 168-pin 486, with a KiCad-friendly datasheet. |
+| PGA-168 machined-pin socket, new old stock | 2 | about $8 for two on eBay | Budget alternative. Check the pin count and grid before buying. |
+| PGA extraction tool | 1 | about $5 to $10 (estimate) | Pulling a 168-pin chip by hand bends pins. |
+| Current-limited bench supply, 0 to 30 V, at least 3 A | 1 | about $50 to $100 (estimate) | Only if not already owned. Runs the CPU at 3.3 V with a 400 mA limit for bring-up. |
+| Digilent Pmod cable kit (240-021-2) | 2 | $7.00 at Digilent | Carries the Pmod-connected signals from the Arty to the carrier. |
+
+A ZIF socket for this footprint is not worth it: 17x17 PGA ZIF test sockets cost $100 to $350, and new Socket 3 ZIF sockets are hard to find.
+
+### Order with the carrier PCB, after the design is done
+
+| Item | Qty | Notes |
+|---|---|---|
+| Carrier PCB, two-layer | 1 batch | Cheap PCB fab, usually sold in batches of 5. The fab can fit the surface-mount resistors and capacitors. |
+| Resistors, 33 to 100 Ω, 0603 or resistor arrays | 80 | Series resistors on FPGA-connected signals. |
+| Resistors, 20 kΩ | 20 | Tie-offs, the value the datasheet recommends. |
+| Capacitors, 100 nF and 10 µF | 30 | Decoupling at the VCC pins. |
+| 2x10 0.1" box header | 1 | ARM JTAG header for the Olimex adapter. |
+| Male headers to plug into the Arty's shield header, and 2x6 headers for the Pmod cables | 1 set | Exact parts depend on the PCB layout. |
+| Small heatsink for a 486 | 1 | Only needed near full clock speed. |
+
+### Not needed for the Am5x86
+
+The 48-pin DIP ZIF, perfboard and level translators in Phases 1 to 3 belong to the general-purpose pin driver and can wait.
 
 ## Package adapters (buy as needed)
 

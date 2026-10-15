@@ -80,9 +80,10 @@ Plugging straight onto the Arty, rather than using jumper wires, matters because
 
 ### Step 3: JTAG bring-up, no FPGA logic yet
 
-1. Fit the chip, power it at 3.3 V with a current limit of about 400 mA, and supply an 8 MHz clock.
-2. Read the IDCODE with OpenOCD and the Olimex adapter. If the chip has no IDCODE, check the length of the instruction register instead.
-3. Use boundary scan SAMPLE while the FPGA toggles each pin, to prove every socket-to-FPGA connection.
+1. Set the HY1803D to 3.3 V and about 400 mA with nothing connected: set the current by briefly shorting the output leads, then remove the short. Connect the carrier with no chip fitted and measure the rail at the socket.
+2. Fit the chip, power it, and supply an 8 MHz clock.
+3. Read the IDCODE with OpenOCD and the Olimex adapter. If the chip has no IDCODE, check the length of the instruction register instead.
+4. Use boundary scan SAMPLE while the FPGA toggles each pin, to prove every socket-to-FPGA connection.
 
 ### Step 4: bus responder
 

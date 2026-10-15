@@ -67,27 +67,27 @@ See [am5x86_flow.md](am5x86_flow.md). Prices looked up on 2026-10-14 from search
 
 ### Order now
 
-| Item | Qty | Price (qty 1) | Notes |
-|---|---|---|---|
-| PGA-168 machined-pin socket, 17x17 grid (Mill-Max 510-93-168-17-101002) | 1 | about $63 at Mouser | Recommended. Exact footprint for the 168-pin 486, with a KiCad-friendly datasheet. |
-| PGA-168 machined-pin socket, new old stock | 2 | about $8 for two on eBay | Budget alternative. Check the pin count and grid before buying. |
-| PGA extraction tool | 1 | about $5 to $10 (estimate) | Pulling a 168-pin chip by hand bends pins. |
-| Current-limited bench supply, 0 to 30 V, at least 3 A | 1 | about $50 to $100 (estimate) | Only if not already owned. Runs the CPU at 3.3 V with a 400 mA limit for bring-up. |
-| Digilent Pmod cable kit (240-021-2) | 2 | $7.00 at Digilent | Carries the Pmod-connected signals from the Arty to the carrier. |
+| Item                                                                    | Qty | Price (qty 1)               | Notes                                                                                                                             |
+| ----------------------------------------------------------------------- | --- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| PGA-168 machined-pin socket, 17x17 grid (Mill-Max 510-93-168-17-101002) | 1   | about $63 at Mouser         | Recommended. Exact footprint for the 168-pin 486, with a KiCad-friendly datasheet.                                                |
+| PGA-168 machined-pin socket, new old stock                              | 2   | about $8 for two on eBay    | Budget alternative. Check the pin count and grid before buying.                                                                   |
+| PGA extraction tool                                                     | 1   | about $5 to $10 (estimate)  | Pulling a 168-pin chip by hand bends pins.                                                                                        |
+| Digital multimeter                                                      | 1   | about $25 to $60 (estimate) | Only if not already owned; none is in the inventory. Checks the 3.3 V rail before the CPU goes in, and continuity on the carrier. |
+| Digilent Pmod cable kit (240-021-2)                                     | 2   | $7.00 at Digilent           | Carries the Pmod-connected signals from the Arty to the carrier.                                                                  |
 
 A ZIF socket for this footprint is not worth it: 17x17 PGA ZIF test sockets cost $100 to $350, and new Socket 3 ZIF sockets are hard to find.
 
 ### Order with the carrier PCB, after the design is done
 
-| Item | Qty | Notes |
-|---|---|---|
-| Carrier PCB, two-layer | 1 batch | Cheap PCB fab, usually sold in batches of 5. The fab can fit the surface-mount resistors and capacitors. |
-| Resistors, 33 to 100 Ω, 0603 or resistor arrays | 80 | Series resistors on FPGA-connected signals. |
-| Resistors, 20 kΩ | 20 | Tie-offs, the value the datasheet recommends. |
-| Capacitors, 100 nF and 10 µF | 30 | Decoupling at the VCC pins. |
-| 2x10 0.1" box header | 1 | ARM JTAG header for the Olimex adapter. |
-| Male headers to plug into the Arty's shield header, and 2x6 headers for the Pmod cables | 1 set | Exact parts depend on the PCB layout. |
-| Small heatsink for a 486 | 1 | Only needed near full clock speed. |
+| Item                                                                                    | Qty     | Notes                                                                                                    |
+| --------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------- |
+| Carrier PCB, two-layer                                                                  | 1 batch | Cheap PCB fab, usually sold in batches of 5. The fab can fit the surface-mount resistors and capacitors. |
+| Resistors, 33 to 100 Ω, 0603 or resistor arrays                                         | 80      | Series resistors on FPGA-connected signals.                                                              |
+| Resistors, 20 kΩ                                                                        | 20      | Tie-offs, the value the datasheet recommends.                                                            |
+| Capacitors, 100 nF and 10 µF                                                            | 30      | Decoupling at the VCC pins.                                                                              |
+| 2x10 0.1" box header                                                                    | 1       | ARM JTAG header for the Olimex adapter.                                                                  |
+| Male headers to plug into the Arty's shield header, and 2x6 headers for the Pmod cables | 1 set   | Exact parts depend on the PCB layout.                                                                    |
+| Small heatsink for a 486                                                                | 1       | Only needed near full clock speed.                                                                       |
 
 ### Not needed for the Am5x86
 
